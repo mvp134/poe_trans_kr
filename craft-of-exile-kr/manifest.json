@@ -1,1 +1,23 @@
-
+{
+  "manifest_version": 3,
+  "name": "Craft of Exile 한글화",
+  "version": "1.0.0",
+  "description": "craftofexile.com의 modifier 및 UI를 한글로 번역합니다.",
+  "permissions": [],
+  "host_permissions": [
+    "https://www.craftofexile.com/*",
+    "https://raw.githubusercontent.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.craftofexile.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
